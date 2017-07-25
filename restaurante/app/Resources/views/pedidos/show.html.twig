@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Pedido</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ pedido.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ pedido.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Plato</th>
+                <td>{{ pedido.plato }}</td>
+            </tr>
+            <tr>
+                <th>Cantidad</th>
+                <td>{{ pedido.cantidad }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('pedidos_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
